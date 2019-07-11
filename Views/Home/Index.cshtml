@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Random Passcode Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .wrapper{
+        margin-left: 500px;
+        text-align: center;
+        align-content: center;
+        height: 500px;
+        width: 500px;
+    }
+    .middle_wrapper{
+            text-align: center;
+            align-content: center;
+        }
+</style>
+</head>
+<body>
+    <div class = wrapper>
+    <div class = "middle_wrapper">
+        <div class="jumbotron jumbotron-fluid">
+            <h1>Random Passcode Generator</h1>
+            <h2>Random Passcode (passcode @ViewBag.count)</h2>
+            <br>
+            <h2>@ViewBag.RandomPasscode</h2>
+            <br>
+            <form asp-action="Index" asp-controller = "Home" method = "Get">
+            <button type="submit" class="btn btn-dark">Generate</button>
+            </form>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
